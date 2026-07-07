@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Userled — Prototypes</title>
+<style>
+  :root{
+    --bg:#0b0b0f; --card:#16161d; --line:#26262f;
+    --text:#f4f4f6; --muted:#a1a1ab; --accent:#6c5ce7;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    background:var(--bg); color:var(--text);
+    min-height:100vh; display:flex; align-items:center; justify-content:center;
+    padding:48px 20px;
+  }
+  .wrap{width:100%; max-width:760px}
+  .brand{font-size:14px; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); margin-bottom:12px}
+  h1{font-size:38px; line-height:1.1; margin-bottom:10px; font-weight:700}
+  .sub{color:var(--muted); font-size:17px; margin-bottom:36px}
+  .grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:14px}
+  a.card{
+    display:block; text-decoration:none; color:inherit;
+    background:var(--card); border:1px solid var(--line); border-radius:14px;
+    padding:20px 22px; transition:.18s ease;
+  }
+  a.card:hover{border-color:var(--accent); transform:translateY(-2px)}
+  a.card .name{font-size:18px; font-weight:600; margin-bottom:4px}
+  a.card .desc{font-size:14px; color:var(--muted)}
+  .arrow{color:var(--accent); font-size:14px; margin-top:12px; display:inline-block}
+  footer{margin-top:40px; color:var(--muted); font-size:13px}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="brand">Userled</div>
+    <h1>Prototypes</h1>
+    <p class="sub">Select a page to preview.</p>
+    <div class="grid">
+      <a class="card" href="platform-option-1.html">
+        <div class="name">Platform</div>
+        <div class="desc">Full platform landing page (Option 1)</div>
+        <span class="arrow">Open →</span>
+      </a>
+      <a class="card" href="campaign-agent-page.html">
+        <div class="name">Campaign Agent</div>
+        <div class="desc">Plan and launch coordinated plays</div>
+        <span class="arrow">Open →</span>
+      </a>
+      <a class="card" href="content-agent-page.html">
+        <div class="name">Content Agent</div>
+        <div class="desc">Draft on-brand pages, ads and email</div>
+        <span class="arrow">Open →</span>
+      </a>
+      <a class="card" href="bidding-agent-page.html">
+        <div class="name">Bidding Agent</div>
+        <div class="desc">Spend where it converts</div>
+        <span class="arrow">Open →</span>
+      </a>
+      <a class="card" href="insights-agent-page.html">
+        <div class="name">Insights Agent</div>
+        <div class="desc">Know what changed, and why</div>
+        <span class="arrow">Open →</span>
+      </a>
+    </div>
+    <footer>© 2026 Userled — User-led. AI-run.</footer>
+  </div>
+</body>
+</html>
